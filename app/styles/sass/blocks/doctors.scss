@@ -1,0 +1,49 @@
+.doctors-card {
+  background: $white;
+  padding: 35px $gutter;
+  border-radius: 0.6em;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: $trs;
+
+  &:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  &-special {
+    @include media-breakpoint-up(lg) {
+      height: 110%;
+      transform: translateY(-5%);
+    }
+  }
+
+  .button {
+    text-transform: none;
+  }
+}
+
+.doctors-subtitle {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.doctors-img {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.doctors-name {
+  padding-bottom: 10px;
+}
+
+.doctors-position {
+  display: block;
+  padding-bottom: 35px;
+  font-size: 14px;
+  font-weight: 300;
+}

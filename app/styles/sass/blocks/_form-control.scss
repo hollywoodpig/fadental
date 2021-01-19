@@ -1,0 +1,98 @@
+.button {
+  padding: 12px;
+  background: $white;
+  color: $black;
+  border-radius: 999rem;
+  text-transform: uppercase;
+  display: inline-block;
+  user-select: none;
+  outline: none;
+  border: none;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+  &.shadow {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.30);
+  }
+
+  &.shadow-sm {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  &-accent-auto {
+    width: auto;
+    text-transform: none;
+    padding: 10px 50px;
+  }
+
+  &-primary {
+    background: $primary;
+    color: $white;
+  }
+
+  &-accent {
+    background: $accent;
+    color: $white;
+  }
+}
+
+.form-group {
+  label {
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+    color: $text;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+    &.wrong {
+      color: crimson;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $gutter;
+  }
+}
+
+.select {
+  border: 1px solid #c4c4c4;
+  background: #f7f8f8;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 999rem;
+  cursor: pointer;
+  font-family: open-sans-fd, $systemfont;
+  outline: none;
+  color: #797979;
+  font-weight: 600;
+  font-size: 14px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%232b2b2b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: 50%;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.input {
+  border: 1px solid #c4c4c4;
+  background: #f7f8f8;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 999rem;
+  color: #797979;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input,
+.select {
+  &.wrong {
+    border: 1px solid crimson;
+  }
+}

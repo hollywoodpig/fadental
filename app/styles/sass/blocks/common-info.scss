@@ -1,0 +1,37 @@
+.common-info {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #f6f6f6;
+  text-align: center;
+  color: #012831;
+
+  &-title {
+    text-transform: uppercase;
+  }
+
+  &-item {
+    display: inline-block;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+
+    &:not(:last-child) {
+      margin-right: 45px;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        margin-bottom: $gutter / 2;
+      }
+    }
+  }
+
+  &-link {
+    font-size: $fontsize;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<section class="appointment">
+  <div class="container">
+    <h2 class="appointment-title">Запишитесь на прием</h2>
+    <form class="appointment-form">
+      <div class="row">
+        <div class="col-md">
+          <div class="form-group">
+            <label for="referral">Направление</label>
+            <select required id="referral" class="select">
+              <option selected disabled>-выбрать-</option>
+              <option value="1">Направление 1</option>
+              <option value="2">Направление 2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input required id="name" type="text" placeholder="Мила Йовович" class="input">
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш Email</label>
+            <input required id="email" type="email" placeholder="@email" class="input">
+          </div>
+        </div>
+        <div class="col-md mt-4 mt-md-0">
+          <div class="form-group">
+            <label for="doctor">Выберите доктора</label>
+            <select required id="doctor" class="select">
+              <option selected disabled>-выбрать-</option>
+              <option value="1">Доктор 1</option>
+              <option value="2">Доктор 2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tel">Телефон</label>
+            <input required id="tel" type="tel" placeholder="+7" class="input">
+          </div>
+          <div class="form-group">
+            <label for="date">Выберите дату</label>
+            <input required id="date" type="date" placeholder="Дата" class="input">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5">
+        <div class="col col-md-auto">
+          <input type="submit" class="button button-primary button-accent-auto shadow-sm" value="Отправить">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

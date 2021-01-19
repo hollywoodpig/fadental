@@ -1,0 +1,48 @@
+.feedback {
+  background: $accent;
+  color: $white;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  .feedback-input,
+  .feedback-button {
+    height: 100%;
+  }
+
+  .feedback-button {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+.feedback-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.feedback-input {
+  border: 2px solid $white;
+  background: transparent;
+  border-radius: 999rem;
+  padding: 10px 30px;
+  font-size: 14px;
+  width: 100%;
+  color: $white;
+
+  &::placeholder {
+    color: rgba($white, 0.6);
+  }
+}
+
+.feedback-button {
+  background: $white;
+  color: $accent;
+  border-radius: 999rem;
+  border: none;
+  padding: 10px 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.rating {
+  font-size: 0;
+
+  &-star {
+    &.checked {
+      svg {
+        path {
+          fill: #ffd600;
+        }
+      }
+    }
+
+    svg {
+      path {
+        fill: none;
+        stroke: #ffd600;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.carousel {
+  padding: 10px 0;
+}
+
+.carousel-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+
+  &.left {
+    left: -40px;
+    background: $white;
+
+    @include media-breakpoint-down(xl) {
+      left: -20px;
+    }
+  }
+
+  &.right {
+    right: -40px;
+    background: $primary;
+
+    @include media-breakpoint-down(xl) {
+      right: -20px;
+    }
+  }
+}
+
+.reviews {
+  .container {
+    position: relative;
+  }
+}

@@ -1,0 +1,65 @@
+.confidential-text {
+  display: flex;
+  font-size: 12px;
+}
+
+.footer {
+  padding: 20px;
+  background: $primary;
+  color: $white;
+
+  .tip-text {
+    color: $white;
+  }
+
+  &-header {
+    display: inline-block;
+  }
+
+  a {
+    color: $white;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    padding-right: $gutter;
+    text-transform: uppercase;
+  }
+}
+
+.social-list {
+  font-size: 0;
+}
+
+.social-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $gutter / 2;
+  }
+}
+
+.social-link {
+  transition: $trs;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.payment-list {
+  max-width: 300px;
+}
+
+.payment-item {
+  display: inline-block;
+}

@@ -1,0 +1,22 @@
+.partners-title {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.partners {
+  padding-bottom: 20px;
+}
+
+.partner {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @include media-breakpoint-down(lg) {
+    height: 100px;
+  }
+}

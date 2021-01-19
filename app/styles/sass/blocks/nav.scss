@@ -1,0 +1,72 @@
+.nav {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  background: $white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .social-link {
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+  }
+
+  .button-accent {
+    padding: 0;
+  }
+}
+
+.nav-menu {
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #0d2829;
+
+  &::before {
+    content: attr(title);
+    display: block;
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: $accent;
+    font-weight: 700;
+  }
+}
+
+.tip {
+  display: inline-flex;
+  align-items: center;
+
+  &-icon {
+    width: 22px;
+    margin-right: $gutter / 2;
+  }
+
+  &-text {
+    font-size: 14px;
+    color: $primary;
+    font-weight: 600;
+  }
+}
+
+.tip-title {
+  padding-bottom: 10px;
+  color: $black;
+}

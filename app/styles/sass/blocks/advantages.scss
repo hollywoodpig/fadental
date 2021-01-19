@@ -1,0 +1,28 @@
+.advantages {
+  background: url(../images/dist/advantages/1.png) no-repeat center;
+  background-size: cover;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+
+.advantages-img {
+  user-select: none;
+  -webkit-user-drag: none;
+
+  &-desktop {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  &-mobile {
+    display: none;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+}

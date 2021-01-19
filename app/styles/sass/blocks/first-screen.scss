@@ -1,0 +1,80 @@
+// first screen
+
+.first-screen {
+  position: relative;
+  padding-top: 85px;
+  padding-bottom: 65px;
+}
+
+.first-screen-title {
+  text-transform: uppercase;
+  color: $black;
+  padding-bottom: 15px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.first-screen-text {
+  text-align: center;
+  color: $black;
+  font-size: 18px;
+}
+
+.tips {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: $white;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  padding: 20px 50px;
+
+  .col-separator-line {
+    &::before {
+      @include media-breakpoint-down(md) {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.first-screen-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  transform: translate(-100px, -#{$gutter / 2});
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.col-separator-line {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    transform: translateX(-#{$gutter / 2});
+    background: #e1e2e6;
+  }
+}
+
+.first-screen-control {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $white;
+
+  &:active {
+    color: $primary;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &:not(:last-child) {
+    margin-right: $gutter / 2;
+  }
+}
