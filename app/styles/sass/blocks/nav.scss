@@ -2,8 +2,6 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   padding: 20px 0;
   background: $white;
-  position: sticky;
-  top: 0;
   z-index: 2;
 
   .social-link {
@@ -15,7 +13,18 @@
   }
 
   .button-accent {
-    padding: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .nav-menu {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+
   }
 }
 
@@ -26,14 +35,31 @@
 .nav-item {
   display: inline-block;
 
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+
+  @media (max-width: 1825px) {
+    margin-top: 20px;
+  }
+
   &:not(:last-child) {
     margin-right: 50px;
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
   }
 }
 
 .nav-link {
   font-size: 14px;
   color: #0d2829;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    font-size: $fontsize;
+  }
 
   &::before {
     content: attr(title);

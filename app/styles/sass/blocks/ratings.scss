@@ -35,9 +35,6 @@
 
   &-ratings {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     span {
       color: #ffd600;
@@ -47,6 +44,8 @@
 
     small {
       padding: 0 3px;
+      position: relative;
+      bottom: 1px;
     }
 
     text-align: center;

@@ -11,6 +11,11 @@
   text-align: center;
   width: 100%;
   cursor: pointer;
+  transition: $trs;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
 
   &.shadow {
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.30);
