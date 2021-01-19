@@ -17,6 +17,7 @@
   }
 
   a {
+    display: inline-block;
     color: $white;
     font-size: 12px;
 
@@ -57,9 +58,13 @@
 }
 
 .payment-list {
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .payment-item {
   display: inline-block;
+
+  img {
+    width: 50px;
+  }
 }
