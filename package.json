@@ -31,6 +31,7 @@
 		"webpack-stream": "^6.1.1"
 	},
 	"dependencies": {
+		"countup.js": "^2.0.7",
 		"imask": "^6.0.5",
 		"plyr": "^3.6.3",
 		"reset-css": "^5.0.1",
